@@ -13,16 +13,75 @@ main, .Card{
 }
 
 .Card{
-  background-image: url('../public/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
   max-width: 400px;
   max-height: 600px;
-  transition: 0.4 ease-out;
+  transition: 0.8s ease-out;
 }
 
-.app.warm{
-  background-image: url(../public/warm-bg.jpg);
+.sandy{
+  background-image: url('../public/Sahara\ Desert.jpg');
+}
+
+.tornado{
+  background-image: url('../public/download.jpg'); 
+}
+
+.volcanicAsh{
+  background-image: url('../public/Download\ Volcano\ Vector\ illustration\ for\ free.jpg');
+}
+
+.coldBase{
+  background-image: url('../public/cold-bg.jpg');
+}
+
+.rainy{
+  background-image: url('../public/0cb5c3dc-80f5-4838-967c-876117ea2e88.png');
+}
+
+.dayCloudy{
+  background-image: url('../public/m\ phone\ wallpaper.jpg');
+}
+
+.nightCloudy{
+  background-image: url('../public/Zandraart.png');
+}
+
+.thunderstorm{
+  background-image: url('../public/Free\ Vector\ _\ Vector\ lightning\ on\ night\ illustration.jpg');
+}
+
+.daySnow{
+  background-image: url('../public/Snowy\ wallpaper\ illustrations\ for\ iPhone.png');
+}
+
+.smoke{
+  background-image: url('../public/Aerial\ Perspective\ Lesson\ 1\ -\ Painting\ a\ Natural\ Landscape.jpg');
+}
+
+.dayMist{
+  background-image: url('../public/Train\ in\ the\ mist\ Art\ Print\ by\ Ryo\ Takemasa.jpg');
+}
+
+.nightMist{
+  background-image: url('../public/792b5bfeb5dc2ab32ce0335e12d1e92d.jpg');
+}
+
+.nightClear{
+  background-image: url('../public/4a82a4396532386830fdd3bc9126b213.jpg');
+}
+
+.dayClear{
+  background-image: url('../public/59b36800c4d3115e5f187d4384c798e8.jpg');
+}
+
+.nightSnow{
+  background-image: url('../public/4fed157056413fbc79724a3be2d1ba2b.jpg');
+}
+
+.warmBase{
+  background-image: url('../public/warm-bg.jpg');
 }
 
 main{
@@ -30,7 +89,7 @@ main{
   max-width: 400px;
   box-shadow: 4px 2px 0 2px rgb(0 0 0 / 60%);
   height: 600px;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0.3));
   padding: 25px;
 }
 
@@ -51,4 +110,56 @@ main{
   border-radius: 0 0 16px 16px;
   margin-top: -25px;
   box-shadow: 0 5px rgba(0,0,0,0.2);
+  color: #313131;
+  transition: 0.4s ease;
+  font-size: 20px;
+}
+
+.searchBar:focus{
+  background-color: rgba(255,255,255,0.75);
+}
+
+.location{
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+
+.date{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+
+.weatherBox{
+  text-align: center;
+}
+
+.temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: white;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50,50,70,0.5);
+  width: -webkit-fill-content;
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 6px rgba(0,0,0,0.2);
+}
+
+.weather{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
 }
