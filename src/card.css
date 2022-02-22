@@ -20,16 +20,17 @@ main, .Card{
   transition: 0.8s ease-out;
 }
 
+/* Weather specific Backgrounds */
 .sandy{
-  background-image: url('../public/Sahara\ Desert.jpg');
+  background-image: url('../public/sandy.jpg');
 }
 
 .tornado{
-  background-image: url('../public/download.jpg'); 
+  background-image: url('../public/tornado.jpg'); 
 }
 
 .volcanicAsh{
-  background-image: url('../public/Download\ Volcano\ Vector\ illustration\ for\ free.jpg');
+  background-image: url('../public/volcanicAsh.jpg');
 }
 
 .coldBase{
@@ -37,51 +38,47 @@ main, .Card{
 }
 
 .rainy{
-  background-image: url('../public/0cb5c3dc-80f5-4838-967c-876117ea2e88.png');
+  background-image: url('../public/rainy.png');
 }
 
 .dayCloudy{
-  background-image: url('../public/m\ phone\ wallpaper.jpg');
+  background-image: url('../public/dayCloudy.jpg');
 }
 
 .nightCloudy{
-  background-image: url('../public/Zandraart.png');
+  background-image: url('../public/nightCloudy.png');
 }
 
 .thunderstorm{
-  background-image: url('../public/Free\ Vector\ _\ Vector\ lightning\ on\ night\ illustration.jpg');
+  background-image: url('../public/thunderstorm.jpg');
 }
 
 .daySnow{
-  background-image: url('../public/Snowy\ wallpaper\ illustrations\ for\ iPhone.png');
+  background-image: url('../public/daySnow.png');
 }
 
 .smoke{
-  background-image: url('../public/Aerial\ Perspective\ Lesson\ 1\ -\ Painting\ a\ Natural\ Landscape.jpg');
+  background-image: url('../public/smoke.jpg');
 }
 
 .dayMist{
-  background-image: url('../public/Train\ in\ the\ mist\ Art\ Print\ by\ Ryo\ Takemasa.jpg');
+  background-image: url('../public/dayMist.jpg');
 }
 
 .nightMist{
-  background-image: url('../public/792b5bfeb5dc2ab32ce0335e12d1e92d.jpg');
+  background-image: url('../public/nightMist.jpg');
 }
 
 .nightClear{
-  background-image: url('../public/4a82a4396532386830fdd3bc9126b213.jpg');
+  background-image: url('../public/nightClear.jpg');
 }
 
 .dayClear{
-  background-image: url('../public/59b36800c4d3115e5f187d4384c798e8.jpg');
+  background-image: url('../public/dayClear.jpg');
 }
 
 .nightSnow{
-  background-image: url('../public/4fed157056413fbc79724a3be2d1ba2b.jpg');
-}
-
-.warmBase{
-  background-image: url('../public/warm-bg.jpg');
+  background-image: url('../public/nightSnow.jpg');
 }
 
 main{
