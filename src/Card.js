@@ -80,7 +80,7 @@ const Card = () => {
         setWeatherBg("volcanicAsh");
       }
     }
-  }, [weather]);
+  }, [weather, weatherBg, isDayTime]);
 
   const DateBuilder = (d) => {
     let months = [
