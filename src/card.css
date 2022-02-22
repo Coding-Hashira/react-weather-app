@@ -96,15 +96,18 @@ main{
 .searchBox{
   width: 100%;
   margin: 0 auto 75px;
+  position: relative;
 }
 
 .searchBar{
   display: block;
   width: 100%;
   padding: 15px;
+  z-index: 999;
   appearance: none;
   background: none;
   border: none;
+  position: relative;
   outline: none;
   background-color: rgba(255,255,255,0.5);
   border-radius: 0 0 16px 16px;

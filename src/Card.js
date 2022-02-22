@@ -4,8 +4,6 @@ import "./card.css";
 const Card = () => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
-  const [lat, setLat] = useState("");
-  const [long, setLong] = useState("");
   const [weatherBg, setWeatherBg] = useState("coldBase");
   const hours = new Date().getHours();
   const isDayTime = hours > 6 && hours < 19;
