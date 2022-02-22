@@ -4,8 +4,8 @@ import "./card.css";
 const Card = () => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
-  const [lat, setLat] = useState('')
-  const [long, setLong] = useState('')
+  const [lat, setLat] = useState("");
+  const [long, setLong] = useState("");
   const [weatherBg, setWeatherBg] = useState("coldBase");
   const hours = new Date().getHours();
   const isDayTime = hours > 6 && hours < 19;
@@ -84,20 +84,21 @@ const Card = () => {
     }
   }, [weather]);
 
-  const showLocalWeather = ()=>{
-      navigator.geolocation.getCurrentPosition((position)=>{
-        setLat(position.coords.latitude)
-        setLong(position.coords.longitude)
-        console.log(lat, long)
-      })
-      fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&appid=ac008e22b6448234bf016e05ce0d6f66`)
-      .then(res => res.json())
-      .then(data=>{
-
-        setWeather(data)
-        console.log(weather)
-      })
-    }
+  const showLocalWeather = () => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLat(position.coords.latitude);
+      setLong(position.coords.longitude);
+      console.log(lat, long);
+    });
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&appid=ac008e22b6448234bf016e05ce0d6f66`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setWeather(data);
+        console.log(weather);
+      });
+  };
 
   const DateBuilder = (d) => {
     let months = [
@@ -167,7 +168,11 @@ const Card = () => {
             </h2>
           </div>
         )}
-        <div className="locationIcon" title="Set Your Current Location" onClick={showLocalWeather}>
+        <div
+          className="locationIcon"
+          title="Set Your Current Location"
+          onClick={showLocalWeather}
+        >
           <img src="/location.svg" className="locationSvg" alt="" />
         </div>
       </main>
